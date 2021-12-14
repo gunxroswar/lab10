@@ -38,10 +38,9 @@ int main()
 		cout << setw(13) << left << year; 
 		cout << setw(13) << left << loan;
 		cout << setw(13) << left << loan*interest/100;
-		total=loan+loan*interest/100;
 		cout << setw(13) << left << total;
 		cout << setw(13) << left << ppy;
-		nbl=(loan+(loan*interest/100))-ppy;
+		nbl=total-ppy;
 		cout << setw(13) << left << nbl;
 		loan = nbl;
 		year=year+1;
